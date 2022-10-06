@@ -1,0 +1,9 @@
+ /* below we have a grouped selector*/
+ p, ul{color:cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:underline;}
+    /*descendent selector*/
+    p a{color:green}
+    #firstparagraph{color:purple;}
+    .pinktext{color:pink}
+    a{text-decoration: none;}

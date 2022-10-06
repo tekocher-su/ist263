@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS intro</title>
+    <!--this is an embedded style sheet-->
+    <style>
+        /* below we have a grouped selector*/
+        p, ul{color:cornflowerblue;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration:underline;}
+        /*descendent selector*/
+        p a{color:green}
+        #firstparagraph{color:purple;}
+        .pinktext{color:pink}
+        a{text-decoration: none;}
+    </style>
+</head>
+<body>
+    <a href="http://amazon.com">amazon</a>
+    <!--Ids must be unique-->
+    <p id="firstparagraph">
+        Lorem ipsum dolor sit Google <a href="http://google.com">Google</a>amet consectetur adipisicing elit. Veritatis culpa tempore libero, accusantium rem dolores facere non velit. Delectus excepturi consequatur voluptatum libero qui aliquam quibusdam. Vero deleniti corporis beatae!
+    </p>
+    <ul>
+        <li>green</li>
+        <li class="pinktext">blue</li>
+    </ul>
+    <p>I am very unhappy right now</p>
+    <p class="pinktext">I want to hibernate until spring</p>
+</body>
+</html>
