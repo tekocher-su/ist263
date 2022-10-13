@@ -1,0 +1,12 @@
+a:visited {color:#9d03fc}
+a:hover {color:#fc8c03}
+body {
+    background-color: #000000;
+   background-image: url("../images/image_processing20200525-27048-1lte81a.png");
+    background-repeat:no-repeat;
+}
+p{color:#fc8c03 }
+.second{border:2px solid #fc8c03;
+    margin: 20px;
+    padding:10px;
+}
