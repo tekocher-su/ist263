@@ -1,0 +1,21 @@
+body{background-color: #AEBDCA;}
+h1,h2{color:#E8Dfca;}
+p, ul{color:#f5efe6}
+a{color:#7895B2}
+nav{
+    background-color: #E8Dfca;
+    color:#7895B2; 
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a:hover{color:#F5EFE6;
+background-color: #7895B2;}
+.motto{float:right;}
+
+.address{display:flex; background-color:#F5EFE6;border-radius: 1em;margin:20px;}
+.adpad,.questions,.map{padding: 20px;}
+.forms{display:flex;background-color: #F5EFE6;border-radius: 1em;margin:20px;}
+.map{flex:2;order:2;}
+.questions{flex:1;order:1;}
+.person{color:black;padding-bottom: 0px;}
+.question{padding:10px;}
