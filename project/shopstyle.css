@@ -1,6 +1,6 @@
 /* all pages/navigation*/
 body{font-family:Arial, Helvetica, sans-serif;background-color: #beeff7;}
-.heady{display:flex;justify-content: space-around;align-items: baseline;}
+.heady{display:flex;justify-content: space-around;align-items: baseline;flex-wrap: wrap;}
 .logo{flex:1;padding:10px;margin-right:40%;}
 .navy{flex:1;}
 header{background-color: #66bbbd;}
@@ -8,26 +8,31 @@ nav{background-color:#66bbbd;padding: 10px;font-size:200%;}
 nav a{padding:10px;}
 nav a:hover{background-color: aliceblue;padding:10px;color:black;}
 a:link,a:visited{text-decoration: none;color:black;}
+@media only screen and (max-width:900px){.logo{order:1;} .navy{order:2;}}
 
 /* Store Gallery*/
 .gallery{display:flex;flex-wrap: wrap;}
-.item{flex:1;border:2px solid rgb(163, 163, 163);margin:2%;background-color: white;padding:10px;text-align: center;}
+.item{flex:1;border:2px solid #999999;margin:2%;background-color: white;padding:10px;text-align: center;min-width: 200px;}
 .galimg{max-width: 45%;}
+.galimg2{max-width: 65%;}
 .titles{text-align: center;font-size: 200%;}
 a.item:hover{background-color: #ebfcff;}
 i{color:grey;}
-h2{margin-bottom: 5px;}
 
 /* store page*/
-.store{display:flex;}
-.storeinfo,.storeinfo2{border:solid 2px black}
-.storeinfo{flex:55%}
-.storeinfo2{flex:45%;padding: 20px;}
+.store{display:flex;flex-wrap: wrap;}
+.storeinfo,.storeinfo2{border:solid 2px black;}
+.storeinfo{flex:3;text-align: center;}
+.storeinfo2{flex:2;padding: 20px;}
+.copy{font-size:150%;}
+.storeimg{max-width: 45%;}
+.storeimg2{max-width: 10%;}
+
 
 /*home page*/
-.tile{display:flex;margin-left: 6%;margin-right: 6%;align-items: center;border-bottom: solid 2px white;border-top: solid 2px white;border-left: solid 2px white;border-right: solid 2px white;}
-.tileimg{max-width: 75%;}
-.left{flex:55%;align-content: center;align-items: center;text-align: center;}
+.tile{display:flex;margin-left: 6%;margin-right: 6%;align-items: center;border-bottom: solid 2px white;border-left: solid 2px white;border-right: solid 2px white;flex-wrap: wrap;}
+.tileimg{max-width: 100%;}
+.left{flex:55%;align-content: center;align-items: center;text-align: center;background-color: #beeff7;}
 .right{flex:45%;text-align: center;}
 .motto{font-size:400%;text-align: center;}
 .instalogo{max-width:30%;}
