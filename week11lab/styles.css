@@ -6,7 +6,7 @@ p, ul{color:#F5EFE6}
 a{color:#395144}
 nav{
     background-color: #E8Dfca;
-    color:#7895B2; 
+    color:#395144; 
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -32,6 +32,8 @@ aside{background-color: #395144;border-radius: 5px; padding:20px}
 .otherskill{flex:1;color:#F5EFE6;}
 .paddy{padding:20px;}
 p{margin-right:25%}
+
+footer{color:#F5EFE6;}
 
 #skip{background-color: aquamarine; border: 2px solid black;padding:5px;position:absolute;left:-999px;}
 #skip:focus{left:10px;}
