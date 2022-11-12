@@ -1,8 +1,8 @@
 body{background-color: #4E6C50;font-size: 125%;font-family: Arial, Helvetica, sans-serif;}
-h1,h2{color:#000000;}
+h1,h2{color:#F5EFE6;}
 h1{font-size: 175%;}
 h2{font-size: 150%;}
-p, ul{color:#000000}
+p, ul{color:#F5EFE6}
 a{color:#395144}
 nav{
     background-color: #E8Dfca;
@@ -11,7 +11,7 @@ nav{
     margin-bottom: 30px;
 }
 nav a:hover{color:#F5EFE6;
-background-color: #7895B2;}
+background-color: #395144;}
 .motto{float:right;}
 .banner{max-width: 100%;}
 
@@ -25,11 +25,11 @@ background-color: #7895B2;}
 
 h1{text-align: center;}
 .desc{padding-bottom: 20px;}
-.icons{display:flex;justify-content: space-around;}
-aside{background-color: #F5EFE6;border-radius: 5px; padding:20px}
+.icons{display:flex;justify-content: space-around;color:#F5EFE6;}
+aside{background-color: #395144;border-radius: 5px; padding:20px}
 .box2{display:flex;}
 .iconbox{flex:3;}
-.otherskill{flex:1;}
+.otherskill{flex:1;color:#F5EFE6;}
 .paddy{padding:20px;}
 p{margin-right:25%}
 
