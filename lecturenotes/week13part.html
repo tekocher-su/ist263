@@ -5,18 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .slides{display:none}
-
-    </style>
 </head>
+<style>
+    #id{color:black;}
+</style>
 <script>
-
+    function colorchange(){document.getElementById('text').style.color = "green"}
 </script>
 <body>
-    <img class="slides" src="../../project_images/duckshirt.png">
-    <img class="slides" src="../../project_images/duck.png">
-    <img class="slides" src="../../project_images/ducksticker.png">
-    
+    <p id="text" onclick="colorchange();">Hello World</p>
 </body>
 </html>

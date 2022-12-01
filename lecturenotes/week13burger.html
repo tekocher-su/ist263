@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burger menu</title>
+    <style>
+        #hamicon{display:none;width:50px;}
+        .row{display:flex;}
+        #close{display:none;}
+        @media only screen and (max-width: 800px){
+            #hamicon {display:block;}
+            #navlinks a {display:block;}
+            #navlinks {display:none;}
+            #close{display:block;}
+        }
+    </style>
+    <script>
+        function shownav (){document.getElementById('navlinks').style.display = "block";}
+        function hidenav (){document.getElementById('navlinks').style.display = "none"}
+    </script>
+    <!--CSS
+            large page no burger
+            small page show burger
+            large side by side
+            small stacked
+        javascript 
+            press burger stacked nav
+            press x hide nav-->
+</head>
+<body>
+    <div class="row">
+        <div><img src="https://laferger.github.io/ist263/images/hamburger.png" id="hamicon" onclick="shownav();"></div>
+        <div><p id="close" onclick="hidenav();">x</p></div>
+    </div>
+    
+    <div id="navlinks">
+        
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        
+
+    </div>
+    
+</body>
+</html>

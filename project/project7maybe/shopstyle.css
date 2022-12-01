@@ -1,5 +1,5 @@
 /* all pages/navigation*/
-body{font-family:Arial, Helvetica, sans-serif;background-color: #beeff7;}
+body{font-family:Arial, Helvetica, sans-serif;}
 .heady{display:flex;justify-content: space-around;align-items: baseline;flex-wrap: wrap;}
 .logo{flex:1;padding:10px;margin-right:20%}
 .navy{flex:1; margin-left: 1%;}
@@ -19,20 +19,21 @@ a:link,a:visited{text-decoration: none;color:black;}
 a.item:hover{background-color: #ebfcff;}
 i{color:#5c5c5c;}
 
+
 /* store page*/
 .store{display:flex;flex-wrap: wrap;}
-.storeinfo,.storeinfo2{border:solid 2px black;}
-.storeinfo{flex:3;text-align: center;min-width: 200px;align-content: center;}
+.storeinfo{flex:3;text-align: center;min-width: 300px;align-content: center; background-color: #ebfcff;}
 .storeinfo2{flex:2;padding: 20px;}
 .copy{font-size:150%;}
 .storeimg{max-width: 45%;}
 .storeimg2{max-width: 10%;}
 input[type=number]{padding:10px;width:100%;}
-select{padding:10px;}
-input{padding: 10px;}
+select{padding:10px;font-size:150%;}
+input{padding: 10px;font-size: 150%;}
 input[type=number]::-webkit-inner-spin-button {opacity: 1;}
-.button{background-color: #66bbbd;border:2px solid #66bbbd; border-radius: 25px;padding: 15px;width:100%;}
+.button{background-color: #66bbbd;border:2px solid #66bbbd; border-radius:30px; padding: 15px;width:100%;}
 .choosie{display:flex;justify-content: space-around;padding:5%}
+.button:hover{background-color: #beeff7;border:2px solid #beeff7;}
 
 
 /*home page*/
