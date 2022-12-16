@@ -18,7 +18,7 @@ a:link,a:visited{text-decoration: none;color:black;}
 .titles{text-align: center;font-size: 200%;}
 a.item:hover{background-color: #ebfcff;transform:scale(1.01,1.01)}
 i{color:#5c5c5c;}
-
+label{display:none;}
 
 /* store page*/
 .store{display:flex;flex-wrap: wrap;}

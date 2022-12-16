@@ -40,6 +40,7 @@ input[type=number]::-webkit-inner-spin-button {opacity: 1;}
 .formy2{margin-left: 8%;margin-right: 8%;}
 .venmo{padding-top: 5%; padding-bottom: 5%;}
 @media only screen and (max-width:900px){.storeimg{max-width: 100%;} .storeimg2{max-width: 25%;} .formy2{margin-left: 0%;}}
+label{display:none;}
 
 #skip{background-color: aquamarine; border: 2px solid black;padding:5px;position:absolute;left:-999px;}
 #skip:focus{left:10px;}
