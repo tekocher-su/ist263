@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../shopstyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project_images/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #bigimg2{display:none;}
+    </style>
+    <script>
+           function imgoff(){document.getElementById('bigimg1').style.display = 'none'; document.getElementById('bigimg2').style.display = 'none'
+        }
+        function img1on(){document.getElementById('bigimg1').style.display = 'inline';
+        }
+        function img2on(){document.getElementById('bigimg2').style.display = 'inline';
+        }    
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="heady">
+            <div class="navy">
+                <nav>
+                    <a href="../index.html"><strong>Home</strong></a>
+                    <a href="../shirts.html"><strong>Shirts</strong></a>
+                    <a href="../stickers.html"><strong>Stickers</strong></a>
+                </nav>
+            </div>
+            <div class="logo">
+                <img src="../../project_images/ddd4.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <div class="store">
+        <div class="storeinfo"> 
+            <img img class="storeimg" id="bigimg1" src="../../project_images/ducksmsq150.png" alt="whale of a good time">
+            <img class="storeimg" id="bigimg2" src="../../project_images/duckdrawsmsq150.png" alt="whale of a good time"><br>
+            <img class="storeimg2" src="../../project_images/ducksmsq150.png" alt="whale of a good time" onclick="imgoff(); img1on();">
+            <img class="storeimg2" src="../../project_images/duckdrawsmsq150.png" alt="whale of a good time" onclick="imgoff(); img2on();">
+        </div>
+        <div class="storeinfo2">
+            <p class="copy">
+                We have our T-shirts printed by custom ink. They are printed on high-quality Hanes cotton T-shirts and come in sizes S-L
+            </p>
+            <form action="https://formspree.io/f/mlekrebe" method="post">
+                <div class="formy">
+                <div>
+                <select name="size" id="size" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+                </div>
+                <div>
+                <input type="number" id="quantity" name="quantity" step="1" placeholder="quantity" class="number"><br>
+                </div>
+                </div>
+                <div class="formy2">
+                    <div class="venmo">
+                        <input type="text" id="venmo" name="venmo" placeholder="please enter your venmo"><br>
+                    </div>
+                <input type="submit" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

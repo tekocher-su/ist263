@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../shopstyle.css">
+</head>
+<script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+    </script>
+<body>
+    <header>
+        <div class="heady">
+            <div class="navy">
+                <nav>
+                    <a href="../index.html"><strong>Home</strong></a>
+                    <a href="../shirts.html"><strong>Shirts</strong></a>
+                    <a href="../stickers.html"><strong>Stickers<strong></a>
+                </nav>
+            </div>
+            <div class="logo">
+                <img src="../../project_images/ddd4.png" alt="logo">
+            </div>
+        </div>
+    </header>
+
+    <div class="store">
+        <div class="storeinfo"> 
+            <div class="w3-container">
+              </div>
+              
+              <div class="content">
+                <img class="mySlides" src="../../project_images/duckshirtsmaller.png" style="display:none">
+                <img class="mySlides" src="../../project_images/duck.png">
+              
+                <div class="rows">
+                  <div class="slidey">
+                    <img class="slideimg" src="../../project_images/duckshirtsmaller.png" onclick="currentDiv(1)">
+                  </div>
+                  <div class="slidey">
+                    <img class="slideimg" src="../../project_images/duck.png" onclick="currentDiv(2)">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="storeinfo2">
+            <p class="copy">
+                We have our T-shirts printed by custom ink. They are printed on high-quality Hanes cotton T-shirts and come in sizes S-L
+            </p>
+            <form>
+                <label for="size">Size:</label>
+                <select name="size" id="size">
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>    
+                    <input type="number" id="quantity" name="quantity" step="1" placeholder="quantity"><br>
+                
+                    <input type="submit">
+                
+            
+            
+            </form>
+        </div>
+    </div>
+</body>

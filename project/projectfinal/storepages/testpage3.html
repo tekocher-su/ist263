@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../shopstyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project_images/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #bigimg2{display:none;}
+    </style>
+    <script>
+          function imgoff(){document.getElementById('bigimg1').style.display = 'none'; document.getElementById('bigimg2').style.display = 'none'
+        }
+        function img1on(){document.getElementById('bigimg1').style.display = 'block';
+        }
+        function img2on(){document.getElementById('bigimg2').style.display = 'block';
+        }
+    </script>
+    
+</head>
+<body>
+   <img img class="storeimg" id="bigimg1" src="../../project_images/whalesmall.png" alt="whale of a good time">
+   <img class="storeimg" id="bigimg2" src="../../project_images/whale.png" alt="whale of a good time"><br>
+   <img class="storeimg2" src="../../project_images/whale.png" alt="whale of a good time" onclick="imgoff(); img2on();">
+    <img class="storeimg2" src="../../project_images/whalesmall.png" alt="whale of a good time" onclick="imgoff(); img1on();">
+
+   
+
+</body>
