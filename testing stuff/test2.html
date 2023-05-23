@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .imagecup img{display:flex; max-width: 30%;}
+    #photo, #draw, #cad{display:block;}
+</style>
+<body>
+    <div class="imagecup" onmouseenter="PlanetsOff(); drawon(); photon();">
+        <img id="logo" src="testimg/planeAsset 4tklogo.png" >
+        <img id="photo" src="testimg/planeAsset 5tklogo.png">
+        <img id="draw" src="testimg/planeAsset 6tklogo.png">
+        <img id="cad" src="testimg/planeAsset 7tklogo.png">
+    </div>
+</body>
+<script>
+    function PlanetsOff(){document.getElementById('photo').style.display = 'none';
+       document.getElementById('draw').style.display = 'none'; 
+       document.getElementById('cad').style.display = 'none';
+       document.getElementById('logo').style.display = 'none';
+       delay(1000);
+       document.getElementById('draw').style.display = 'block';
+        delay(1000);
+        document.getElementById('draw').style.display = 'none';}
+    
+    /*setTimeout(function drawon(){document.getElementById('draw').style.display = 'block';
+       document.getElementById('photo').style.display = 'none';
+       document.getElementById('cad').style.display = 'none';
+       document.getElementById('logo').style.display = 'none';},3000)
+    setTimeout(function photon(){document.getElementById('photo').style.display = 'block';
+       document.getElementById('draw').style.display = 'none';
+       document.getElementById('cad').style.display = 'none';
+       document.getElementById('logo').style.display = 'none';},6000)
+    setTimeout(function photon(){document.getElementById('cad').style.display = 'block';
+       document.getElementById('draw').style.display = 'none';
+       document.getElementById('photo').style.display = 'none';
+       document.getElementById('logo').style.display = 'none';},6000)*/   
+
+       
+
+
+
+</script>

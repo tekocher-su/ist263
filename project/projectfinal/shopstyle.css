@@ -8,7 +8,7 @@ nav{background-color:#66bbbd;padding: 10px;font-size:200%;}
 nav a{font-family: 'Oswald', sans-serif;padding:10px;}
 nav a:hover{background-color: aliceblue;padding:10px;color:black;}
 a:link,a:visited{text-decoration: none;color:black;}
-@media only screen and (max-width:900px){.logo{order:1;} .navy{order:2;} .heady{margin-right:0%;}}
+@media only screen and (max-width:899px){.logo{order:1;} .navy{order:2;} .heady{margin-right:0%;}}
 
 /* Store Gallery*/
 .gallery{display:flex;flex-wrap: wrap;}

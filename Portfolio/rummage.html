@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="random images/favicon.ico">
+</head>
+<style>
+    .burger{display:none; justify-content: space-between;}
+    .dropdown{display:none;}
+    @media only screen and (max-width:900px){.burger{display:flex;}}
+    #hamicon{display:none;width:50px;}
+        .row{display:flex;}
+        #close{display:none;}
+        @media only screen and (max-width: 900px){
+            #hamicon {display:block;}
+            #navlinks a {display:block;}
+            #navlinks {display:none;}
+            #close{display:block;}
+        }
+    #namesm{font-family:'Oswald'; color:white; font-size: 150%;}
+    @media only screen and (min-width:900px){.head2{display:none;}}
+</style>
+<script>
+    function shownav (){document.getElementById('navlinks').style.display = "block"; document.getElementById('namesm').style.display = "none";}
+    function hidenav (){document.getElementById('navlinks').style.display = "none"; document.getElementById('namesm').style.display = "block";}
+</script>
+<body>
+    <div class="heady">
+        <div class="logoside">
+            <img src="random images/planeAsset 1@4x.png" id="logo"><h1 id="name">Theo Kocher</h1>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="portfoliotest.html">Design Projects </a>
+                <a href="photography.html">Photography </a>
+                <a href="illustration.html">Illustrations </a>
+                <a href="resume.html">Resume</a>
+            </nav>
+        </div>
+    </div>
+    <div class="head2">
+        <div>
+        <div class="row">
+        <div><img src="random images/planeAsset 2burger.png" id="hamicon" onclick="shownav();"></div>
+        
+        <nav>
+        <div id="navlinks">
+            <a href="portfoliotest.html">Design Projects</a>
+            <a href="photography.html">Photography</a>
+            <a href="illustration.html">Illustrations</a>
+            <a href="resume.html">Resume</a>
+            <div><p id="close" onclick="hidenav();">X</p></div>
+        </div>
+        </nav>
+        </div>
+        </div>
+        <div class="dumb">
+            <h3 id="namesm">Theo Kocher</h3>
+        </div>
+    </div>
+    <main>
+        <div class="projectimgs">
+        <img src="random images/rummage1.png">
+        <img src="random images/rummage2.png">
+        <img src="random images/rummage3.png">
+        <img src="random images/rummage4.png">
+        <img src="random images/rummage5.png">
+        </div>
+    </main>
+</body>
+</html>
