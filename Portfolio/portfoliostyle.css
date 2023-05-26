@@ -1,13 +1,13 @@
 /*every page*/
 body{background-color: rgb(36, 36, 36);}
-#logo{max-width: 20%; margin-left: 5%;margin-top: 3%;}
+#logo{max-width: 30%; margin-left: 5%;margin-top: 3%;}
 nav{font-size:2em;}
-.links{flex:3; padding-left: 20%;}
+.links{flex:5; display: flex; justify-content: flex-end;margin-right: 5%;}
 .logoside{flex:2;padding-left: 3%;}
 .heady{display: flex; width:100%; align-items: baseline; justify-content: space-between; position:fixed; top:0;left:0; background-color: rgb(36,36,36);z-index: 5;box-shadow: 0px 10px 5px rgb(30,30,30);}
-nav a{text-decoration: none;color: white; padding:10px;font-family: 'Oswald', sans-serif;}
+nav a{text-decoration: none;color: white; padding:10px;font-family: 'Oswald', sans-serif; font-size: 1em;}
 nav a:hover{color:rgb(36, 36, 36); background-color: white;}
-#name{display:inline;padding-left: 5%;color: white; font-family: 'Oswald', sans-serif;}
+#name{display:inline;padding-left: 5%;color: white; font-family: 'Oswald', sans-serif;font-size: 2em;}
 @media only screen and (max-width:900px){.heady{display:none;}}
 
 #close{color:red;  font-family: 'Oswald';}
@@ -15,9 +15,9 @@ nav a:hover{color:rgb(36, 36, 36); background-color: white;}
 .dumb{margin-right: 5%;}
 
 /*main gallery*/
-.pagecovers{display: flex; padding: 3%; top:20%;}
+.pagecovers{display: flex; padding-top: 3%;padding-right: 3%; padding-left: 3%;}
 .galimg{max-width:90%;min-width: 300px;}
-main{padding-top:10%;}
+main{padding-top:12%;}
 .container {position: relative; text-align: center;color: white;display:flex;flex-wrap: wrap;}
 .middle{ left: 0;
     bottom: 100%;
@@ -43,6 +43,7 @@ main{padding-top:10%;}
 
 /*resume page*/
 #resume{max-width: 80%; padding-top: 15%;display:block; width:90%; margin-left:auto; margin-right:auto;}
+@media only screen and (max-width:900px){#resume{max-width:100%; padding-top: 20%;}}
 
 /*photo pages*/
 .slideshowframe{padding-top: 15%;max-width: 65%;margin:auto;}
