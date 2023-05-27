@@ -1,6 +1,6 @@
 /*every page*/
 body{background-color: rgb(36, 36, 36);}
-#logo{max-width: 30%; margin-left: 5%;margin-top: 3%;}
+#logo{max-width: 15%; margin-left: 5%;margin-top: 3%;}
 nav{font-size:2em;}
 .links{flex:5; display: flex; justify-content: flex-end;margin-right: 5%;}
 .logoside{flex:2;padding-left: 3%;}
@@ -17,7 +17,7 @@ nav a:hover{color:rgb(36, 36, 36); background-color: white;}
 /*main gallery*/
 .pagecovers{display: flex; padding-top: 3%;padding-right: 3%; padding-left: 3%;}
 .galimg{max-width:90%;min-width: 300px;}
-main{padding-top:12%;}
+main{padding-top:8%;}
 .container {position: relative; text-align: center;color: white;display:flex;flex-wrap: wrap;}
 .middle{ left: 0;
     bottom: 100%;
@@ -70,3 +70,9 @@ main{padding-top:12%;}
   }
 .illus:hover{transform: scale(1.01,1.01);}
 @media only screen and (max-width:900px){.illusmain{padding-top: 6%;}}
+
+
+/*Photo gallery*/
+.photogallery{display:flex;flex-wrap: wrap;padding-top: 8%; justify-content: center;}
+.photogallery img{max-width: 30%; min-width:400px;padding:1%}
+.photogallery img:hover{display:block; float:left; max-width: 70%;}
